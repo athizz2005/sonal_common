@@ -64,7 +64,7 @@ void load_dalvik_properties() {
     } else {
         return;
     }
-
+    property_override("ro.apex.updatable", "false");
     property_override("dalvik.vm.heapstartsize", heapstartsize);
     property_override("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
     property_override("dalvik.vm.heapsize", heapsize);
